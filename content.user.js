@@ -12,7 +12,5 @@
 const selectors = ["#sd", ".mtw.mbw", "#forum_side_menu", "iframe", "script", ".plc.plm", "footer", "#f_pst", "#user_side_menu"];
 
 setInterval(() => {
-    selectors.forEach(s => {
-        document.querySelectorAll(s).forEach(e => e.remove());
-    });
+    selectors.forEach(s => document.querySelectorAll(s).forEach(e => e.remove()));
 }, 500);
