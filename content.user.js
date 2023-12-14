@@ -11,17 +11,6 @@
 
 const selectors = ["#sd", ".mtw.mbw", "#forum_side_menu", "iframe", "script", ".plc.plm", "footer", "#f_pst", "#user_side_menu"];
 
-//const observer = new MutationObserver(mutations => {
-//    selectors.forEach(s => {
-//        document.querySelectorAll(s).forEach(e => e.remove());
-//    });
-//});
-
-//observer.observe(document.body, {
-//    childList: true,
-//    subtree: true
-//});
-
 setInterval(() => {
     selectors.forEach(s => {
         document.querySelectorAll(s).forEach(e => e.remove());
